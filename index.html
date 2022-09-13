@@ -88,7 +88,9 @@
     </section>
     <section class="main__featured">
       <article class="main__featured-card main__card card card--bg-light-brown">
-        <img src="IMAGENES/Productos/Producto4-.png" class="card__image card__image--sm">
+        <div class="card__image-container">
+          <img src="IMAGENES/Productos/Producto4-.png" class="card__image card__image--sm">
+        </div>
         <div class="card__info">
           <h4 class="card__title card__title--sm">alfajores de maicena</h4>
           <p class="card__description card__description--hidden">Alfajores de dulce de leche con coco rallado, relleno
@@ -117,8 +119,124 @@
     <div class="main__form-section">
       <h4>contáctenos</h4>
     </div>
-
+    <section class="main__contact">
+      <!--  <img src="IMAGENES/Productos/producto5.jpg" alt="" class="main__contact-image"> -->
+      <form action="#" class="main__contact-form  form-contact">
+        <p class="form-contact__description">Déjanos tu consulta y nuestro personal se pondrá en contacto a la brevedad:
+        </p>
+        <label for="name" class="form-contact__label">nombre</label>
+        <input type="text" id="name" name="name" class="main__contact-form-input form-contact__input">
+        <label for="mail" class="form-contact__label">email</label>
+        <input type="email" id="mail" name="mail" class="main__contact-form-input form-contact__input">
+        <label for="message" class="form-contact__label">consulta</label>
+        <textarea name="message" id="message" cols="30" rows="5"
+          class="main__contact-form-textarea form-contact__textarea"></textarea>
+        <input type="submit" class="form-contact__sumbit btn-outline"></input>
+      </form>
+    </section>
+    <div class="main__cards-group-title">
+      <h4>recetas</h4>
+    </div>
+    <section class="main-cards-group cards-group">
+      <article class="cards-group__item">
+        <div class="card-group__item-image-container">
+          <img src="IMAGENES/Productos/producto6.jpg" alt="" class="card-group__item-image">
+        </div>
+        <div class="card-group__item-description">
+          <h4 class="card-group__item-title">conitos</h4>
+          <p class="card-group__item-text">Una deliciosa opción para acompañar las meriendas, ese antojo de media noche
+            o compartir con amigos.</p>
+          <button type="button" class="card-group__item-button btn-outline">preparación</=>
+        </div>
+      </article>
+      <article class="cards-group__item">
+        <div class="card-group__item-image-container">
+          <img src="IMAGENES/Productos/producto7.jpg" alt="" class="card-group__item-image">
+        </div>
+        <div class="card-group__item-description">
+          <h4 class="card-group__item-title">pepas</h4>
+          <p class="card-group__item-text">Las galletitas más tiernas y ricas, rellenas de dulce de leche, ideales para
+            el mate y la hora del té.</p>
+          <button type="button" class="card-group__item-button btn-outline">preparación</=>
+        </div>
+      </article>
+      <article class="cards-group__item">
+        <div class="card-group__item-image-container">
+          <img src="IMAGENES/Productos/producto8.png" alt="" class="card-group__item-image">
+        </div>
+        <div class="card-group__item-description">
+          <h4 class="card-group__item-title">torta nutt</h4>
+          <p class="card-group__item-text">La torta de tres capas más sabrosa del mundo, combina una base de vainilla
+            dulce de leche y cubierta de choconutt.</p>
+          <button type="button" class="card-group__item-button btn-outline">preparación</button>
+        </div>
+      </article>
+    </section>
   </main>
+  <footer class="footer">
+    <article class="footer__logo">
+      <img src="IMAGENES/Logo/LogoHumaya100x100.png" alt="">
+    </article>
+    <article class="footer__section menu">
+      <h5 class="footer__section-title">menu</h5>
+      <ul class="footer__section-list">
+        <li><a href="#" class="footer__section-list-item">Home</a></li>
+        <li><a href="#" class="footer__section-list-item">Productos</a></li>
+        <li><a href="#" class="footer__section-list-item">Locales</a></li>
+        <li><a href="#" class="footer__section-list-item">Contactos</a></li>
+      </ul>
+    </article>
+    <article class="footer__section navigation">
+      <h5 class="footer__section-title">navegación</h5>
+      <ul class="footer__section-list">
+        <li><a href="#" class="footer__section-list-item">Preguntas frecuentes</a></li>
+        <li><a href="#" class="footer__section-list-item">Distribuidores</a></li>
+        <li><a href="#" class="footer__section-list-item">Prensa</a></li>
+        <li><a href="#" class="footer__section-list-item">Recetas exclusivas</a></li>
+      </ul>
+    </article>
+    <article class="footer__section social">
+      <h5 class="footer__section-title">redes</h5>
+      <ul class="footer__section-list">
+        <li class="footer__section-list-item"><a href="#">
+            <svg  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__social-icon">
+              <path
+                d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                stroke="currentColor" stroke-width="1.5" />
+              <path d="M17.5 6.51L17.51 6.49889" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a></li>
+        <li class="footer__section-list-item"><a href="#">
+          <svg  viewBox="0 0 24 24"  fill="white"  xmlns="http://www.w3.org/2000/svg" class="footer__social-icon">
+            <path fill-rule="evenodd" d="M4,2 L20,2 C21.1045695,2 22,2.8954305 22,4 L22,20 C22,21.1045695 21.1045695,22 20,22 L4,22 C2.8954305,22 2,21.1045695 2,20 L2,4 C2,2.8954305 2.8954305,2 4,2 Z M4,4 L4,20 L20,20 L20,4 L4,4 Z M13,12.0043945 L11.1330566,12.0043945 L11.1330566,10.0043945 L13,10.0043945 L13,9 C13,7.34314575 14.3431458,6 16,6 L17,6 L17,8 L16,8 C15.4477153,8 15,8.44771525 15,9 L15,10.0043945 L16.9824219,10.0043945 L16.9824219,12.0043945 L15,12.0043945 L15,18 L13,18 L13,12.0043945 Z"/>
+          </svg>
+        </a></li>
+        <li class="footer__section-list-item"><a href="#">
+            <svg  viewBox="0 0 24 24"  fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__social-icon">
+              <path
+                d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M10 12C8.34315 12 7 13.3431 7 15C7 16.6569 8.34315 18 10 18C11.6569 18 13 16.6569 13 15V6C13.3333 7 14.6 9 17 9"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a></li>
+      </ul>
+    </article>
+    <article class="footer__section location">
+      <h5 class="footer__section-title">ubicación</h5>
+      <div class="footer__location">
+      <small>Montes de Oca 2356, CABA</small>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.03934884832!2d-58.37269928444256!3d-34.65370918044668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aab78be889%3A0xe808082ff7311cac!2sAv.%20Montes%20de%20Oca%202356%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1663038515019!5m2!1ses!2sar"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="footer__iframe"></iframe>
+      </div>
+    </article>
+  </footer>
 </body>
 
 </html>
